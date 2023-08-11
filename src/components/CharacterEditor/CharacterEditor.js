@@ -38,6 +38,8 @@ function App() {
             controls below. What sort of adventure will you embark on?{' '}
           </p>
         </header>
+
+        <div className={styles.perspective}></div>
         <div className={styles.controlColumn}>
           <ControlPane
             title="Bodies"
@@ -78,6 +80,8 @@ function App() {
         </div>
       </MaxWidthWrapper>
 
+      
+
       <div className={styles.characterWrapper}>
         <Character
           body={body}
@@ -88,6 +92,8 @@ function App() {
           clothesColor={clothesColor}
         />
       </div>
+      
+      
     </main>
   );
 }

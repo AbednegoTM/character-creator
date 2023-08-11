@@ -16,6 +16,7 @@
   margin: 0;
   /* Optical centering */
   margin-bottom: -4px;
+  padding-bottom: 24px;
 }
 
 .metadata {
@@ -23,4 +24,12 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
+}
+
+
+/* mobile */
+@media (max-width: 425px) {
+  .controlPane {
+    max-width: 100%;
+  }
 }

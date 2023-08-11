@@ -6,3 +6,15 @@
   text-align: center;
 }
 
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* mobile */
+@media (max-width: 425px) {
+ .footer {
+    display: none;
+  }
+}

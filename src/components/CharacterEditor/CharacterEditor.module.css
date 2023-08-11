@@ -6,8 +6,18 @@
 .maxWidthWrapper {
 }
 
+.perspective{
+  height: 40%;
+  background-color: hsl(195deg, 20%, 86%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -21,10 +31,53 @@
 .description {
   font-size: 1.25rem;
   margin: 0;
+  max-width: 500px;
 }
 
 .characterWrapper {
+  min-height: 500px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 95%;
 }
 
 .controlColumn {
+  width: 50%;
+  position: relative;
+}
+
+
+/* Mobile */
+@media (max-width: 425px) {
+
+  .header{
+    visibility: hidden;
+  }
+
+  .characterWrapper {
+    inset: 0;
+  } 
+
+  .controlColumn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    gap: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 30%;
+    z-index: 1;
+  }
+}
+
+/* Tablet */
+@media (min-width: 426px) and (max-width: 768px) {
+  .characterWrapper {
+    height: 700px;
+    right: -100px;
+  } 
+
 }
